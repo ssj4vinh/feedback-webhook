@@ -1,4 +1,10 @@
-feedback-webhook/
-├── api/
-│   └── feedback.js
-└── vercel.json  ← add this file
+{
+  "functions": {
+    "functions/feedback.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "routes": [
+    { "src": "/api/feedback", "dest": "functions/feedback.js" }
+  ]
+}
