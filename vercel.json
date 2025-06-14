@@ -1,0 +1,4 @@
+feedback-webhook/
+├── api/
+│   └── feedback.js
+└── vercel.json  ← add this file
